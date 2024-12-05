@@ -20,7 +20,7 @@ CHANNELS = 1
 RATE = 44100
 
 # Load the audio file
-AUDIO_FILE = "assets/music/saxobeat.wav"  # Replace with your file
+AUDIO_FILE = "assets/music/saxobeat.wav"
 wf = wave.open(AUDIO_FILE, 'rb')  # Convert to .wav if necessary (e.g., using pydub)
 
 # PyAudio setup for playback
@@ -124,7 +124,7 @@ def game():
         # circle_radius = 100
         # circle_center = (WIDTH // 2, HEIGHT // 2)
         # pygame.draw.circle(screen, CIRCLE_COLOR, circle_center, circle_radius)
-        clock.tick(60)
+        clock.tick(120)
 
     pygame.quit()
     stream.stop_stream()
